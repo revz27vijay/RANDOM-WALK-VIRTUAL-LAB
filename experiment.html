@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random Walk Experiment</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2>Random Walk vs Real Stock</h2>
+
+<label>Steps: <span id="stepValue">100</span></label><br>
+<input type="range" min="10" max="500" value="100"
+oninput="updateSteps(this.value)"><br><br>
+
+<button onclick="runSimulation()">Run</button>
+<button onclick="downloadChart()">Download Graph</button>
+
+<canvas id="walkChart" width="700" height="400"></canvas>
+
+<div id="tableContainer"></div>
+
+<script src="js/randomwalk.js"></script>
+</body>
+</html>
 
